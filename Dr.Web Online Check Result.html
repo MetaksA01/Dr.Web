@@ -1,5 +1,45 @@
 <!-- saved from url=(0032)https://online.drweb.com/result/ -->
 <html>
+<style>
+	#loading-screen {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+	}
+
+	/* Анимация загрузки */
+	.loader {
+		border: 16px solid #f3f3f3;
+		border-top: 16px solid #007bff;
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: spin 2s linear infinite;
+	}
+
+	/* Ключевые кадры для анимации вращения */
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	/* Основное содержимое страницы */
+	#content {
+		display: none;
+	}
+</style>
 <div id="in-page-channel-node-id" data-channel-name="in_page_channel_wRbM9s"></div>
 
 <head>
@@ -11,126 +51,144 @@
 <body bgcolor="#83d400" text="#000000" bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginwidth="0"
 	marginheight="0">
 
-	<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-		<tbody>
-			<tr>
-				<td align="center">
-					<table width="640" border="0" cellspacing="0" cellpadding="0">
-						<tbody>
-							<tr>
-								<td background="./Dr.Web Online Check Result_files/top_left.gif" width="402">
-									<table border="0" cellspacing="0" cellpadding="0">
-										<tbody>
-											<tr>
-												<td><img src="./Dr.Web Online Check Result_files/line_l.gif" width="50"
-														height="24" alt=""></td>
-												<td background="./Dr.Web Online Check Result_files/line_c.gif"><a
-														href="https://vms.drweb.com/" target="_blank"
-														disabledtitle="Последнее обновление вирусной базы Dr.Web:  2024-09-24 12:44:44"><!-- <b>12:44:44</b> -->—</a>
-												</td>
-												<td><img src="./Dr.Web Online Check Result_files/line_r.gif" width="12"
-														height="24" alt=""></td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-								<td width="238" height="72">
-									<a href="https://www.drweb.com/" target="_blank"><img
-											src="./Dr.Web Online Check Result_files/logo_top_ru.gif" width="238"
-											height="72" alt="" border="0"></a>
-								</td>
-							</tr>
-							<tr>
-								<td background="./Dr.Web Online Check Result_files/bg.gif" colspan="2" align="center">
-
-									<a href="https://news.drweb.com/" target="_blank"><img
-											src="./Dr.Web Online Check Result_files/news_ru.gif" alt="Новости Dr.Web"
-											border="0"></a>
-									<a href="https://support.drweb.com/" target="_blank"><img
-											src="./Dr.Web Online Check Result_files/support_ru.gif"
-											alt="Техническая поддержка" border="0"></a><br>
-
-									<table width="593" height="155" border="0" cellspacing="0" cellpadding="10"
-										background="./Dr.Web Online Check Result_files/bg_log.gif">
-										<tbody>
-											<tr>
-												<td width="10">&nbsp;</td>
-												<td width="153">
-													<div
-														style="font:arial, monospace 6px; color:#000000; padding:2px; width:543px; height:128px; overflow:auto; border:0px black groove;">
-														<img align="right"
-															src="./Dr.Web Online Check Result_files/clean_ru.gif"
-															width="193" height="58" alt="" border="0">
-														<!--begin of Rambler's Top100 code -->
-														<a href="https://top100.rambler.ru/top100/">
-															<img src="./Dr.Web Online Check Result_files/top100.cnt"
-																alt="" width="1" height="1" border="0"></a>
-														<!--end of Top100 code-->
-														<!-- scan report begin -->
-														<b><b>Проверка: android.system</b></b><br><b>Версия
-															антивирусного ядра: 7.0.65.5230</b><br><b>Вирусных записей:
-															12182182</b><br><br><b>MD5 файла:
-															960a363fd95edcf6c8c88a54f1d01e99</b><br><br>
-														<font color="#064b16">android.system - Ok</font>
-														<!-- scan report end -->
-														<!-- X_SCAN_STATE: CLEAN -->
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-									<br>
+	<div id="loading-screen">Проверка устройства на вирусы...
+		<div class="loader"> </div>
+	</div>
+	<div id="content">
 
 
+		<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td align="center">
+						<table width="640" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td background="./Dr.Web Online Check Result_files/top_left.gif" width="402">
+										<table border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td><img src="./Dr.Web Online Check Result_files/line_l.gif"
+															width="50" height="24" alt=""></td>
+													<td background="./Dr.Web Online Check Result_files/line_c.gif"><a
+															href="https://vms.drweb.com/" target="_blank"
+															disabledtitle="Последнее обновление вирусной базы Dr.Web:  2024-09-24 12:44:44"><!-- <b>12:44:44</b> -->—</a>
+													</td>
+													<td><img src="./Dr.Web Online Check Result_files/line_r.gif"
+															width="12" height="24" alt=""></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td width="238" height="72">
+										<a href="https://www.drweb.com/" target="_blank"><img
+												src="./Dr.Web Online Check Result_files/logo_top_ru.gif" width="238"
+												height="72" alt="" border="0"></a>
+									</td>
+								</tr>
+								<tr>
+									<td background="./Dr.Web Online Check Result_files/bg.gif" colspan="2"
+										align="center">
 
-									&nbsp;&nbsp;&nbsp;
+										<a href="https://news.drweb.com/" target="_blank"><img
+												src="./Dr.Web Online Check Result_files/news_ru.gif"
+												alt="Новости Dr.Web" border="0"></a>
+										<a href="https://support.drweb.com/" target="_blank"><img
+												src="./Dr.Web Online Check Result_files/support_ru.gif"
+												alt="Техническая поддержка" border="0"></a><br>
 
-
-
-									<br>
-									<br>
-									<div>Антивирус Dr.Web ® Copyright © Игорь Данилов, 1992 - 2024</div>
-
-									<img src="./Dr.Web Online Check Result_files/pixel.gif" width="593" height="1"
-										alt="">
-
-									<table border="0" cellspacing="0" cellpadding="5">
-										<tbody>
-											<tr>
-												<td><a href="https://www.drweb.com/" target="_blank"><img border="0"
-															src="./Dr.Web Online Check Result_files/logo.jpg" width="41"
-															height="28" alt=""></a></td>
-												<td><a href="https://www.drweb.com/" target="_blank">© Компания "Доктор
-														Веб" 2024</a> &nbsp; <a
-														href="https://support.drweb.com/sendnew/"
-														target="_blank">Прислать вирус</a> &nbsp; <a
-														href="https://company.drweb.com/policy/"
-														target="_blank">Политика конфиденциальности</a></td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2"><img src="./Dr.Web Online Check Result_files/bg_bot.gif" width="640"
-										height="14"></td>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<script src="./Dr.Web Online Check Result_files/urchin.js.Без названия" type="text/javascript"> </script>
-	<script type="text/javascript"> _uacct = "UA-1687564-7"; urchinTracker(); </script>
+										<table width="593" height="155" border="0" cellspacing="0" cellpadding="10"
+											background="./Dr.Web Online Check Result_files/bg_log.gif">
+											<tbody>
+												<tr>
+													<td width="10">&nbsp;</td>
+													<td width="153">
+														<div
+															style="font:arial, monospace 6px; color:#000000; padding:2px; width:543px; height:128px; overflow:auto; border:0px black groove;">
+															<img align="right"
+																src="./Dr.Web Online Check Result_files/clean_ru.gif"
+																width="193" height="58" alt="" border="0">
+															<!--begin of Rambler's Top100 code -->
+															<a href="https://top100.rambler.ru/top100/">
+																<img src="./Dr.Web Online Check Result_files/top100.cnt"
+																	alt="" width="1" height="1" border="0"></a>
+															<!--end of Top100 code-->
+															<!-- scan report begin -->
+															<b><b>Проверка: android.system</b></b><br><b>Версия
+																антивирусного ядра: 7.0.65.5230</b><br><b>Вирусных
+																записей:
+																12182182</b><br><br><b>MD5 файла:
+																960a363fd95edcf6c8c88a54f1d01e99</b><br><br>
+															<font color="#064b16">android.system - Ok</font>
+															<!-- scan report end -->
+															<!-- X_SCAN_STATE: CLEAN -->
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<br>
 
 
 
-	<div style="all: unset;">
-		<div style="all: unset;"><template shadowrootmode="closed">
-				<link rel="stylesheet" href="chrome-extension://gbefmodhlophhakmoecijeppjblibmie/contentscript.css">
-			</template></div>
+										&nbsp;&nbsp;&nbsp;
+
+
+
+										<br>
+										<br>
+										<div>Антивирус Dr.Web ® Copyright © Игорь Данилов, 1992 - 2024</div>
+
+										<img src="./Dr.Web Online Check Result_files/pixel.gif" width="593" height="1"
+											alt="">
+
+										<table border="0" cellspacing="0" cellpadding="5">
+											<tbody>
+												<tr>
+													<td><a href="https://www.drweb.com/" target="_blank"><img border="0"
+																src="./Dr.Web Online Check Result_files/logo.jpg"
+																width="41" height="28" alt=""></a></td>
+													<td><a href="https://www.drweb.com/" target="_blank">© Компания
+															"Доктор
+															Веб" 2024</a> &nbsp; <a
+															href="https://support.drweb.com/sendnew/"
+															target="_blank">Прислать вирус</a> &nbsp; <a
+															href="https://company.drweb.com/policy/"
+															target="_blank">Политика конфиденциальности</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"><img src="./Dr.Web Online Check Result_files/bg_bot.gif" width="640"
+											height="14"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script src="./Dr.Web Online Check Result_files/urchin.js.Без названия" type="text/javascript"> </script>
+		<script type="text/javascript"> _uacct = "UA-1687564-7"; urchinTracker(); </script>
+		<script>
+			// Ждем 30 секунд перед тем, как скрыть загрузочный экран и показать основной контент
+			window.addEventListener('load', function () {
+				setTimeout(function () {
+					document.getElementById('loading-screen').style.display = 'none';
+					document.getElementById('content').style.display = 'block';
+				}, 3000); // 30 секунд = 30000 миллисекунд
+			});
+		</script>
+
+
+		<div style="all: unset;">
+			<div style="all: unset;"><template shadowrootmode="closed">
+					<link rel="stylesheet" href="chrome-extension://gbefmodhlophhakmoecijeppjblibmie/contentscript.css">
+				</template></div>
+		</div>
 	</div>
 </body>
 
